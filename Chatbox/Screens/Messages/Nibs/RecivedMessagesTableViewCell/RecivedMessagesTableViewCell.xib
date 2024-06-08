@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="RecivedMessagesTableViewCell" customModule="Chatbox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RecievedMessages" translatesAutoresizingMaskIntoConstraints="NO" id="jZz-bJ-MMG">
+                        <rect key="frame" x="24" y="15.000000000000004" width="181.66666666666666" height="38.333333333333343"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello ! Nazrul How are you?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zq6-vB-Igp">
+                        <rect key="frame" x="36" y="26.999999999999996" width="155.66666666666666" height="14.333333333333332"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:25 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTl-vc-qVX">
+                        <rect key="frame" x="24.000000000000004" y="61.333333333333343" width="47.333333333333343" height="62.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jZz-bJ-MMG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="3w7-jn-Xaa"/>
+                    <constraint firstItem="CTl-vc-qVX" firstAttribute="leading" secondItem="jZz-bJ-MMG" secondAttribute="leading" id="AqJ-Pg-MCD"/>
+                    <constraint firstItem="CTl-vc-qVX" firstAttribute="top" secondItem="jZz-bJ-MMG" secondAttribute="bottom" constant="8" id="MCy-Ce-Nl4"/>
+                    <constraint firstItem="zq6-vB-Igp" firstAttribute="top" secondItem="jZz-bJ-MMG" secondAttribute="top" constant="12" id="OBC-xg-7D9"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jZz-bJ-MMG" secondAttribute="trailing" constant="100" id="Vhd-wY-5ic"/>
+                    <constraint firstAttribute="bottom" secondItem="CTl-vc-qVX" secondAttribute="bottom" constant="15" id="ic5-qy-O9L"/>
+                    <constraint firstItem="jZz-bJ-MMG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="ogw-Di-HHm"/>
+                    <constraint firstItem="zq6-vB-Igp" firstAttribute="leading" secondItem="jZz-bJ-MMG" secondAttribute="leading" constant="12" id="s5P-Qd-fuZ"/>
+                    <constraint firstItem="zq6-vB-Igp" firstAttribute="trailing" secondItem="jZz-bJ-MMG" secondAttribute="trailing" constant="-14" id="uWC-Hl-YMU"/>
+                    <constraint firstItem="zq6-vB-Igp" firstAttribute="bottom" secondItem="jZz-bJ-MMG" secondAttribute="bottom" constant="-12" id="zxF-QO-Wzd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageLabel" destination="zq6-vB-Igp" id="zpX-p1-f3o"/>
+                <outlet property="timeLabel" destination="CTl-vc-qVX" id="8Jn-Pk-iEJ"/>
+            </connections>
+            <point key="canvasLocation" x="196.18320610687022" y="52.464788732394368"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="RecievedMessages" width="180" height="36"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
